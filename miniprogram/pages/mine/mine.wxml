@@ -1,2 +1,1 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<van-button icon="star-o" type="primary" bind:click="checkOut">登出</van-button>

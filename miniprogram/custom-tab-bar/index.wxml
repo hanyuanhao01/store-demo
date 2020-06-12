@@ -1,0 +1,13 @@
+<cover-view class="tabbar">
+	<block wx:for="{{tabList}}" wx:key="index">
+		<cover-view class="tabbar-each" data-index="{{index}}" bindtap="switchTab">
+			<block wx:if="{{!item.isSpecial}}">
+				<cover-view class="tabbar-text" style="{{activeIndex == index? 'color: red' : ''}}">{{item.title}}</cover-view>
+				<cover-image class="icon" src="{{activeIndex == index ? item.selectedIconPath : item.iconPath}}"></cover-image>
+			</block>
+			<block wx:if="{{item.isSpecial}}">
+				<cover-image class="icon-special" src="{{item.iconPath}}"></cover-image>
+			</block>
+		</cover-view>
+	</block>
+</cover-view>

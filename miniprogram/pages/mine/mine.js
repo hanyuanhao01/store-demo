@@ -9,6 +9,15 @@ Page({
   },
 
   /**
+   * 退出
+   */
+  checkOut: function() {
+    wx.reLaunch({
+      url: '/pages/login/login',
+    })
+  },
+
+  /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
@@ -26,7 +35,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({
+        activeIndex: 2    // 根据tab的索引值设置
+      })  
+    }
   },
 
   /**

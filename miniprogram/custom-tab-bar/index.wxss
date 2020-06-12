@@ -1,0 +1,29 @@
+.tabbar {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgba(0, 0, 0, 0.247);
+  padding: 20rpx 0rpx;
+}
+
+.tabbar-each {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.tabbar-text {
+  font-size: 26rpx;
+  color: rgba(0, 0, 0, 0.589);
+}
+
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.icon-special {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: -16rpx;
+}

@@ -1,7 +1,9 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/index/index",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/play/play"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -11,19 +13,25 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "主页",
-      "iconPath": "",
-      "selectedIconPath": ""
-    },
-    {
-      "pagePath": "pages/mine/mine",
-      "text": "我的",
-      "iconPath": "",
-      "selectedIconPath": ""
-    }]
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/icon/音乐_1.png",
+        "selectedIconPath": "images/icon/音乐.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/icon/猫咪_1.png",
+        "selectedIconPath": "images/icon/猫咪.png"
+      }
+    ]
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

@@ -1,0 +1,11 @@
+<view class="login-box">
+  <van-cell-group>
+    <van-field value="{{ username }}" required clearable label="用户名" icon="question-o" placeholder="请输入用户名" bind:click-icon="onClickIcon" data-name="userName" bind:blur="getInputVal"/>
+    <van-field value="{{ password }}" type="password" label="密码" placeholder="请输入密码" required border="{{ false }}" data-name="passWord" bind:blur="getInputVal"/>
+  </van-cell-group>
+  <view class="login-btn">
+    <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)" block bind:click="handleClick">登陆</van-button>
+  </view>
+</view>
+
+<van-notify id="van-notify" />
