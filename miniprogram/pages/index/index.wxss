@@ -1,1 +1,15 @@
-/* miniprogram/pages/index/index.wxss */
+.swiper-item {
+  height: 100%;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.skyblue {
+  background-color: skyblue;
+}

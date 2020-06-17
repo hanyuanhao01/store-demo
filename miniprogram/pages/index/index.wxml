@@ -1,0 +1,9 @@
+<van-notice-bar left-icon="volume-o" text="网易云音乐和韩国CUBE娱乐达成战略合作，加强IP多元化开发。" />
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+	<block wx:for="{{background}}" wx:key="*this">
+		<swiper-item>
+			<view class="swiper-item {{item.class}}"></view>
+		</swiper-item>
+	</block>
+</swiper>

@@ -12,6 +12,9 @@ Page({
    * 退出
    */
   checkOut: function() {
+    wx.removeStorage({
+      key: 'isLogin',
+    })
     wx.reLaunch({
       url: '/pages/login/login',
     })

@@ -5,14 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    bgTextStyle: 'dark',
+    scrollTop: '200rpx',
+    bgColor: '#ff0000',
+    bgColorTop: '#00ff00',
+    bgColorBottom: '#0000ff',
+    nbTitle: '标题',
+    nbLoading: false,
+    nbFrontColor: '#000000',
+    nbBackgroundColor: '#ffffff',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      nbTitle: '新标题',
+      nbLoading: true,
+      nbFrontColor: '#ffffff',
+      nbBackgroundColor: '#000000',
+    })
   },
 
   /**

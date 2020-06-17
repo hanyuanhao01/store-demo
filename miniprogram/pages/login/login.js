@@ -36,6 +36,11 @@ Page({
       return;
     }
 
+    wx.setStorage({
+      key:"isLogin",
+      data:true
+    })
+
     wx.switchTab({
       url: '/pages/index/index',
     })
@@ -58,7 +63,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.hideHomeButton()
   },
 
   /**
