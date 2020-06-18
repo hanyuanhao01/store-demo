@@ -1,1 +1,18 @@
-/* pages/mine/mine.wxss */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-img {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    margin-bottom: 30rpx;
+}
+
+.header-btn {
+    font-size: 28rpx;
+    padding: 0rpx 20rpx;
+    border: 1rpx solid lightcoral;
+}

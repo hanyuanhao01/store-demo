@@ -26,20 +26,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.getStorage({
-      key: 'isLogin',
-      success(res) {
-        if (!res.data) {
-          wx.reLaunch({
-            url: '/pages/login/login',
-          })
-        }
+    wx.checkSession({
+      success () {
+        //session_key 未过期，并且在本生命周期一直有效
       },
-      fail(err) {
-        // console.log(err)
-        wx.reLaunch({
-          url: '/pages/login/login',
-        })
+      fail () {
+        // session_key 已经失效，需要重新执行登录流程
+        wx.login() //重新登录
       }
     })
   },

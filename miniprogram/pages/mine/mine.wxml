@@ -1,1 +1,10 @@
-<van-button icon="star-o" type="primary" bind:click="checkOut">登出</van-button>
+<!-- <van-button icon="star-o" type="primary" bind:click="checkOut" >登出</van-button>
+
+<button open-type="getUserInfo" bindgetuserinfo="getInfo">获取信息</button>
+
+<view bind:tap="getShouquan">获取授权</view> -->
+
+<view class="header" open-type="getUserInfo" bindgetuserinfo="getInfo">
+    <image class="header-img" src="../../images/icon/avatar.png" />
+    <button class="header-btn" open-type="getUserInfo" bindgetuserinfo="getInfo">{{isLogin == true ? '{name}' : '点击登陆'}}</button>
+</view>

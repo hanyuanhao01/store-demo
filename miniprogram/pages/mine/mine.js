@@ -1,24 +1,68 @@
 // pages/mine/mine.js
+
+
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    userName: '默认名字'
   },
+
+ 
+  getInfo: function(e) {
+    console.log(e)
+  },
+
+  // getShouquan(e) {
+
+  //   wx.getUserInfo({
+  //     success: function(res) {
+  //       var userInfo = res.userInfo
+  //       var nickName = userInfo.nickName
+  //       var avatarUrl = userInfo.avatarUrl
+  //       var gender = userInfo.gender //性别 0：未知、1：男、2：女
+  //       var province = userInfo.province
+  //       var city = userInfo.city
+  //       var country = userInfo.country
+  //     },
+  //     fail(err) {
+  //       console.log(err)
+  //     }
+  //   })
+
+  //   // wx.getSetting({
+  //   //   success(res) {
+  //   //     if (!res.authSetting['scope.userInfo']) {
+  //   //       wx.authorize({
+  //   //         scope: 'scope.userInfo',
+  //   //         success () {
+  //   //           console.log('授权成功')
+              
+  //   //         },
+  //   //         fail(err) {
+  //   //           console.log(err)
+  //   //         }
+  //   //       })
+  //   //     }
+  //   //   },
+  //   //   fail(err) {
+  //   //     console.log(err)
+  //   //   }
+  //   // })
+  // },
+
 
   /**
    * 退出
    */
-  checkOut: function() {
-    wx.removeStorage({
-      key: 'isLogin',
-    })
-    wx.reLaunch({
-      url: '/pages/login/login',
-    })
-  },
+  // checkOut: function() {
+  //   // wx.reLaunch({
+  //   //   url: '/pages/login/login',
+  //   // })
+  // },
 
   /**
    * 生命周期函数--监听页面加载

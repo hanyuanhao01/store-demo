@@ -36,11 +36,6 @@ Page({
       return;
     }
 
-    wx.setStorage({
-      key:"isLogin",
-      data:true
-    })
-
     wx.switchTab({
       url: '/pages/index/index',
     })
